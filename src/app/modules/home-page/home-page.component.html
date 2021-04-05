@@ -1,0 +1,13 @@
+<div id="cityWeatherWidget">
+    <h1>{{city}} Weather Report</h1>
+        <div *ngFor="let dt of resultData">
+            <h2>{{dt.day}}</h2>
+            <div class="row">
+                <p class="col-sm-3 col-12"  *ngFor="let rp of dt.reports">
+                    Temp: {{rp.main.temp | temperatureConverter:'C'}}
+                    <small>{{rp.dt_txt | date:'hh:ss:aa'}}</small>
+                </p>
+            </div>
+            
+        </div>
+</div>
