@@ -1,0 +1,57 @@
+@import url('./assets/css/bootstrap.min.css');
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./assets/images/indore-bg.jpg') no-repeat 50%;
+    background-attachment:fixed;
+    background-size: cover;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #FFF;
+}
+
+#cityWeatherWidget {
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(0,0,0,0.8);
+    margin: 20px auto;
+}
+
+#cityWeatherWidget > div {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+#cityWeatherWidget > div:last-child {
+    border-bottom: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 18px;
+    color: #FFF;
+    padding: 10px;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+small {
+    display: block;
+    margin-bottom:10px;
+}
